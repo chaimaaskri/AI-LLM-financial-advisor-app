@@ -5,7 +5,7 @@ import PyPDF2
 
 # Function to load Llama model and tokenizer
 def load_llama_model():
-    model_name = "llama-2-13b"  # or use smaller versions if necessary
+    model_name = "meta-llama/Llama-2-7b-chat-hf"  # or use smaller versions if necessary
     tokenizer = LlamaTokenizer.from_pretrained(model_name)
     model = LlamaForCausalLM.from_pretrained(model_name)
     return model, tokenizer
